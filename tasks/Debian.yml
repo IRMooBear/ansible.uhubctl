@@ -1,0 +1,12 @@
+---
+- name: install uhubctl dependencies
+  apt:
+    state: present
+    name: [
+      'libusb-1.0-0-dev',
+      'libusb-1.0-0',
+    ]
+  register: result
+  retries: 3
+  delay: 10
+  until: not result.failed

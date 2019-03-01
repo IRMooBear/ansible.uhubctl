@@ -1,0 +1,11 @@
+---
+- name: make uhubctl
+  become: false
+  make:
+  args:
+    chdir: /usr/local/src/uhubctl
+- name: install uhubctl
+  make:
+    target: install
+  args:
+    chdir: /usr/local/src/uhubctl
