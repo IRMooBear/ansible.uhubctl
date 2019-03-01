@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/IRMooBear/install_uhubctl.svg?branch=master)](https://travis-ci.com/IRMooBear/install_uhubctl)
+
 Install UHubCTL
 =========
 
