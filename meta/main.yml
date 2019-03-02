@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: uhubctl
   author: Anh Nguyen
   description: Compile and install uhubctl
   company: N/A
