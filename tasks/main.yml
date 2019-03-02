@@ -21,4 +21,4 @@
     path: /usr/sbin/uhubctl
   register: uhubctl_check
 - include: compile_uhubctl.yml
-  when: not uhubctl.stat.exists or uhubctl_repo.before != uhubctl_repo.after
+  when: not uhubctl_check.stat.exists or uhubctl_repo.before != uhubctl_repo.after
