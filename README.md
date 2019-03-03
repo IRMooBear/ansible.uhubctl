@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/IRMooBear/install_uhubctl.svg?branch=master)](https://travis-ci.com/IRMooBear/install_uhubctl)
+[![Build Status](https://travis-ci.com/IRMooBear/ansible.uhubctl.svg?branch=master)](https://travis-ci.com/IRMooBear/ansible.uhubctl)
 
 Install UHubCTL
 =========
