@@ -1,4 +1,8 @@
 ---
+- include: Debian.yml
+  when: ansible_os_family == 'Debian'
+- include: RedHat.yml
+  when: ansible_os_family == 'RedHat'
 - name: make uhubctl
   become: false
   make:
