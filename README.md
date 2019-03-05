@@ -5,6 +5,8 @@ Install uhubctl
 
 This is an ansible role that install the uhubctl utility.
 
+The platforms are all platforms I have tested this role on.
+
 Dependencies
 ------------
 This role build uhubctl from source from https://github.com/mvp/uhubctl.
@@ -20,7 +22,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: irmoobear.install_uhubctl, uhubctl_version: "v2.0.0" }
+         - { role: irmoobear.uhubctl, uhubctl_version: "v2.0.0" }
 
 License
 -------
