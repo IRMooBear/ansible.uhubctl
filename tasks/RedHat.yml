@@ -1,5 +1,6 @@
 ---
 - name: install uhubctl dependencies
+  become: yes
   yum:
     state: present
     name: [

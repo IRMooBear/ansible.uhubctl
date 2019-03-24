@@ -1,6 +1,7 @@
 ---
 # tasks file for install_uhubctl
 - name: clone uhubctl
+  become: yes
   git:
     repo: https://github.com/mvp/uhubctl.git
     dest: /usr/local/src/uhubctl
@@ -12,6 +13,7 @@
   delay: 10
   until: not uhubctl_repo.failed
 - name: set ansible user as owner of uhubctl folder
+  become: yes
   file:
     path: /usr/local/src/uhubctl
     owner: "{{ ansible_user }}"

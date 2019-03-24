@@ -1,5 +1,6 @@
 ---
 - name: install uhubctl dependencies
+  become: yes
   apt:
     state: present
     name: [
